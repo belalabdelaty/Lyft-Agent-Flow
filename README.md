@@ -1,46 +1,42 @@
 # 🚗 Lyft Agent Helper
 
-A smart internal tool built for Lyft support agents to **cut down Average Handle Time (AHT)** and make each interaction smoother, faster, and more accurate.  
+A simple internal tool built for Lyft support agents to make life easier and handling time shorter.  
 
-Over **100 agents** are already using it daily — and it’s making a real impact on speed, consistency, and overall customer experience.
-
----
-
-## ⚡ What It Does
-
-This project started as a small automation idea and turned into a full-fledged workflow tool.  
-It integrates directly with Lyft’s internal systems and helps agents:
-
-- 🔍 Access relevant data instantly  
-- 💬 Get context-aware response suggestions  
-- 🧾 Automate repetitive text and ticket actions  
-- 📊 Track and optimize AHT per interaction  
-
-Everything runs on a **Google Apps Script backend** hosted [here](https://script.google.com/macros/s/AKfycbwfvNBeE7RIosqsrTgzSZCn8HY5OuubKSoDM17pLpLAB5IMmrRQIggcoAG90AD7mjHM0A/exec), built for speed, reliability, and simplicity.
+The idea was pretty straightforward: agents were spending way too much time digging through docs, notes, and templates just to send one email or find the right snippet. So this tool brings everything into one clean place — no tabs, no confusion, no wasted time.
 
 ---
 
-## 🧠 Tech Stack
+## 💡 What It Does
 
-- **Google Apps Script** (backend logic + deployment)  
-- **HTML / CSS / JS** (front-end interface)  
-- **Google Sheets API** for data handling and logs  
-- **Lyft internal systems integration**  
+- Collects **all internal notes, responses, and snippets** in one organized place.  
+- Lets you write the **email body**, choose if it’s for a **rider or driver**, and automatically generates the rest.  
+- Includes **click-to-copy snippets** so agents can grab what they need instantly.  
+- Reduces variance between agents and keeps responses consistent.  
+- Helps lower **AHT (Average Handle Time)** across the board.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Google Apps Script** – backend + hosting  
+- **HTML / CSS / JS** – front-end  
+- **Google Sheets API** – data storage and updates  
+
+Everything runs on a single Apps Script deployment:
+👉 [Live tool](https://script.google.com/macros/s/AKfycbwfvNBeE7RIosqsrTgzSZCn8HY5OuubKSoDM17pLpLAB5IMmrRQIggcoAG90AD7mjHM0A/exec)
 
 ---
 
 ## 🚀 Why I Built It
 
-I noticed how much time agents spent switching tabs, copying info, and doing repetitive tasks.  
-So I built something lightweight that just *fits* into their daily workflow — no installs, no friction, just faster handling and cleaner data.
+Every agent had their own notes and shortcuts, which caused inconsistency and wasted time.  
+This project fixes that by centralizing all the info and making it accessible in a couple of clicks. It’s already helping 100+ agents work faster and stay consistent.
 
 ---
 
 ## 🛠️ Setup (for Devs)
 
-If you want to try it locally or fork it for your own team:
-
-1. Clone the repo  
+1. Clone the repo:
    ```bash
    git clone https://github.com/YOUR_USERNAME/lyft-agent-helper.git
    cd lyft-agent-helper
