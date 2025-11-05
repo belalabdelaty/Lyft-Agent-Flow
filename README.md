@@ -2,7 +2,7 @@
 
 A simple internal tool built for Lyft support agents to make life easier and handling time shorter.  
 
-The idea was pretty straightforward: agents were spending way too much time digging through docs, notes, and templates just to send one email or find the right snippet. So this tool brings everything into one clean place — no tabs, no confusion, no wasted time.
+The idea was pretty straightforward: agents were spending way too much time digging through docs, notes, and templates just to send one email or find the right snippet. So this tool brings everything into one clean place , no tabs, no confusion, no wasted time.
 
 ---
 
@@ -38,5 +38,5 @@ This project fixes that by centralizing all the info and making it accessible in
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/lyft-agent-helper.git
+   git clone https://github.com/belalabdelaty/lyft-agent-helper.git
    cd lyft-agent-helper
