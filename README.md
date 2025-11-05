@@ -6,7 +6,7 @@ The idea was pretty straightforward: agents were spending way too much time digg
 
 ---
 
-## 💡 What It Does
+##  What It Does
 
 - Collects **all internal notes, responses, and snippets** in one organized place.  
 - Lets you write the **email body**, choose if it’s for a **rider or driver**, and automatically generates the rest.  
@@ -16,7 +16,7 @@ The idea was pretty straightforward: agents were spending way too much time digg
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - **Google Apps Script** –  hosting  
 - **HTML / CSS / JS** – front-end  
@@ -27,14 +27,14 @@ Everything runs on a single Apps Script deployment:
 
 ---
 
-## 🚀 Why I Built It
+##  Why I Built It
 
 Every agent had their own notes and shortcuts, which caused inconsistency and wasted time.  
 This project fixes that by centralizing all the info and making it accessible in a couple of clicks. It’s already helping 100+ agents work faster and stay consistent.
 
 ---
 
-## 🛠️ Setup (for Devs)
+##  Setup (for Devs)
 
 1. Clone the repo:
    ```bash
