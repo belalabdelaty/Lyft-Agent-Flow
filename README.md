@@ -18,7 +18,7 @@ The idea was pretty straightforward: agents were spending way too much time digg
 
 ## ⚙️ Tech Stack
 
-- **Google Apps Script** – backend + hosting  
+- **Google Apps Script** –  hosting  
 - **HTML / CSS / JS** – front-end  
 - **Google Sheets API** – data storage and updates  
 
