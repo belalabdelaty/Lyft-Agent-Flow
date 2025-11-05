@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyft Support Templates</title>
+  <base target="_top" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav>
+    <img src="assets/lyft-logo.svg" alt="Lyft logo" />
+    <button class="nav-btn" onclick="showSection('notes')">Notes Templates</button>
+    <button class="nav-btn" onclick="showSection('email')">Email Template</button>
+    <button class="nav-btn" onclick="showSection('snippets')">Snippets</button>
+  </nav>
+
+  <div class="container">
+    <!-- NOTES SECTION -->
+    <div id="notes">
+      <div class="note-block">
+        <div class="note-title">
+          <h2>L&F Internal Note</h2>
+          <button class="copy-btn" onclick="copyText('lf')">Copy</button>
+        </div>
+        <textarea id="lf">
+Description of the lost item:
+Status of the lost item:
+Best contact:
+Owner:
+Finder:
+Ride Link:
+        </textarea>
+      </div>
+
+      <div class="note-block">
+        <div class="note-title">
+          <h2>Damage Note</h2>
+          <button class="copy-btn" onclick="copyText('damage')">Copy</button>
+        </div>
+        <textarea id="damage">
+Damage category:
+Damage severity level:
+Damage charge:
+Ride link:
+Driver's damage ticket:
+        </textarea>
+      </div>
+
+      <div class="note-block">
+        <div class="note-title">
+          <h2>Standard Call Internal Note</h2>
+          <button class="copy-btn" onclick="copyText('call')">Copy</button>
+        </div>
+        <textarea id="call">
+- Premium Driver Phone Log:
+- Driver Tier:
+- Summary of call:
+- Compass Workflow(s) used:
+- Resolution Reason:
+- Ride Link:
+- Issue with call (Dropped, No voice, Voicemail): N/A
+        </textarea>
+      </div>
+    </div>
+
+    <!-- EMAIL SECTION -->
+    <div id="email" class="hidden">
+      <div class="note-title">
+        <h2>Email Template</h2>
+      </div>
+      <div class="email-options">
+        <button class="email-btn" id="driverBtn" onclick="setEmailType('driver')">Driver</button>
+        <button class="email-btn" id="riderBtn" onclick="setEmailType('rider')">Rider</button>
+      </div>
+      <textarea id="emailBody" placeholder="Write only the body here..."></textarea>
+      <button class="copy-btn" onclick="generateEmail()">Generate</button>
+
+      <div class="note-block hidden" id="finalEmail">
+        <div class="note-title">
+          <h3>Full Email</h3>
+          <button class="copy-btn" onclick="copyText('fullEmail')">Copy</button>
+        </div>
+        <textarea id="fullEmail" readonly></textarea>
+      </div>
+    </div>
+
+    <!-- SNIPPETS SECTION -->
+    <div id="snippets" class="hidden fade-in p-6 mx-auto text-gray-200">
+      <h2 class="text-2xl font-bold mb-6 text-center text-[#ea0b8c]">✨ Snippet Templates</h2>
+      <!-- You can paste your snippets HTML blocks here -->
+    </div>
+  </div>
+
+  <div id="copyToast">Copied to clipboard!</div>
+  <script src="script.js"></script>
+</body>
+</html>
